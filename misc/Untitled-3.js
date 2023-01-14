@@ -16,25 +16,8 @@ function treasure_hunt() {
     }
   }
   
-  // Define the main game loop
-  function play_game() {
-    // Start the game
-    console.log("Welcome to the treasure hunt game!");
-    
-    // Show the first scene
-    treasure_hunt();
-  }
-  
-  // Start the game
-  play_game();
+ 
 
-  /*In this code, the treasure_hunt() function defines a scene in the game where the player is presented with a choice of which direction to go. 
-  The play_game() function is the main game loop, which displays the first scene and then allows the player to make choices to determine what 
-  happens next. The prompt() function is used to get input from the player, and the console.log() function is used to print messages to the screen.*/
-
- /* <button id="start-game">Start game</button>
-
-<script>
   // Declare the variables
   var gameOver = false;
   var currentLocation = "forest";
@@ -73,11 +56,9 @@ function treasure_hunt() {
       }
     }
   }
-</script> */
 
-/*<button id="start-game">Start game</button>
 
-<script>
+
   // Declare the gameOver variable
   var gameOver = false;
 
@@ -109,5 +90,5 @@ function treasure_hunt() {
       }
     }
   }
-</script> */
+ 
 

@@ -1,12 +1,20 @@
+"use strict";
 
-let choiceOne = document.querySelector('#choice1');
-var choiceTwo = document.getElementById('choice2');
-var nextQuest = document.querySelector('#question');
+const choiceOne = document.querySelector('#choice1');
+const choiceTwo = document.getElementById('choice2');
+const nextQuest = document.querySelector('#question');
 
 //const startGame = querySelector('button');
 
 
- 
+ (function startGame(){
+   let startBtn = document.createElement('button');
+   let btnTxt = document.createTextNode = 'Start Game';
+   let myDiv = document.querySelector('body');
+   startBtn.appendChild(btnTxt);
+   myDiv.appendChild(startBtn);
+
+ })();
 
 //let hero = document.querySelector('input').value;
 

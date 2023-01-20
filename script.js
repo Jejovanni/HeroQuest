@@ -7,12 +7,15 @@
     var conDiv = document.getElementById('container');
     const heroName = document.createElement("form");
     heroName.setAttribute('id', 'hero_name');
+
     var heroInput = document.createElement('input');
     heroInput.setAttribute('placeholder', 'What is your name?');
     heroInput.setAttribute('type', 'text');
     heroInput.setAttribute('required', '');
+
     heroName.appendChild(heroInput);
     conDiv.appendChild(heroName);
+
     document.addEventListener('keydown', (event) => {
         const key = event.code;
 
@@ -21,13 +24,23 @@
            document.removeChild(heroName);
            console.log(hero);
 
+           startGame();
+
         }
 
     });
 
 })();
  
+    function startGame(){
+        //create a function that will fire up the game, first it'll load epilogue, and present a choice
+        //this weill be done by creating and appending a div with a paragraph in it, then you change the innerHTML or innerText
+       var questPara = document.createElement('p');
+        var question = document.setAttribute('id', 'quest');
+        questPara.appendChild(question);
+        conDiv.appendChild(questPara);
 
+    }
    
 
 
